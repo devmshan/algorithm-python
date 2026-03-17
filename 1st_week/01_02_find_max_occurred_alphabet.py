@@ -1,14 +1,17 @@
 def find_max_accurred_alphabet(string):
-
-    alphabet_array = ["a", "b", "c", "d", "e", "f", "g", "h" ,"i", "j" ,"k", "l" ,"m", "n" ,"o", "p" ,"q", "r" ,"s", "t" ,"u", "v" ,"w", "x"
-                      "y", "z"]
+    alphabet_accurrence_array = find_alphabet_occurrence_array(string)
+    alphabet_array = ["a", "b", "c", "d", "e", "f", "g", "h" ,"i", "j" ,"k", "l" ,"m", 
+                      "n" ,"o", "p" ,"q", "r" ,"s", "t" ,"u", "v" ,"w", "x", "y", "z"]
     
     max_occurence = 0
     max_alphabet = alphabet_array[0]
 
-    
+    for char in alphabet_array:
+        if (alphabet_accurrence_array[ord(char)-97] > max_occurence):
+            max_occurence = alphabet_accurrence_array[ord(char)-97]
+            max_alphabet = char
 
-    return "a"
+    return max_alphabet
 
 # 1. a, b, c 처럼 문자가 해당 문자열에 얼마나 있는지 파악하고, 그 개수가 가장 크다면 반환해줘야 하는 값을 그 알파벳으로 변환한다.
 # a -> hello my name is dingcodingco -> 0 max_occurence = 0 max_alphabet = a
@@ -41,7 +44,7 @@ def find_alphabet_occurrence_array(string):
 # - replace(" ", "") — 문자열을 한 번 순회하며 공백만 제거
 # - "".join(text.split()) — split으로 리스트를 만들고, join으로 다시 합치는 2단계 작업
 
-print(find_max_occurred_alphabet("hello my name is dingcodingco"))
+print(find_max_accurred_alphabet("hello my name is dingcodingco"))
 
 #str.isalpha() 알파벳인지 확인 
 

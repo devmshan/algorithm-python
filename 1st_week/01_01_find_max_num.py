@@ -1,13 +1,9 @@
 def find_max_num(array):
+    max_number = array[0]
     for number in array:
-        i = array.index(number)
-        is_max_num = True
-        for compare_number in array:
-            if number < compare_number:
-                is_max_num = False
-        if is_max_num:
-            print(i)
-            return number
+        if number > max_number:
+            max_number = number
+    return max_number
 
 # 1. 하나의 원소를 다른 원소들과 비교해서 최대값인지 분석하는 방법.
 # 3, 5, 6, 1, 2, 4

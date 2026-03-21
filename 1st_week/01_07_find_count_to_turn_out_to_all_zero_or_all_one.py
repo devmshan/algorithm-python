@@ -3,7 +3,7 @@ import sys
 string1 = sys.stdin.readline()
 
 def chk_turn_out(string):
-    start = string[0]
+
     count01 = 0
     count10 = 0
     for i in range(1, len(string)):

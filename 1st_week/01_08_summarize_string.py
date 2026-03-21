@@ -22,6 +22,7 @@ def summarize_string(string):
             exist_alpha_string.append(str(alphabet_occurrence_array[i]))
             exist_alpha_string.append('/')
     
+    #2주차 배울예정
     exist_alpha_string.pop()
     
     return ''.join(exist_alpha_string)

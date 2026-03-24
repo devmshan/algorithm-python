@@ -7,7 +7,6 @@ class LinkedList:
     def __init__(self, value):
         self.head = Node(value)
         
-    #LinkedList의 가장 끝에 있는 노드에 새로운 노드를 연결해줘
     def append (self, value):
         cur = self.head
         
@@ -16,7 +15,6 @@ class LinkedList:
 
         cur.next = Node(value)
         
-    #LinkedList에서 저장한 head를 
     def print_all(self):
         cur = self.head
         

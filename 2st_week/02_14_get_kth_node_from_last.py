@@ -60,7 +60,6 @@ class LinkedList:
         
         for i in range(k):
             fast = fast.next
-        print(fast.data)
         
         while fast is not None:
             slow = slow.next

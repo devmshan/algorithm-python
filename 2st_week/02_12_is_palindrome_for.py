@@ -7,3 +7,16 @@ def is_palindrome_for(string):
     return True
 
 print(is_palindrome_for('abccba'))
+
+#a a
+#b b
+#c c
+#c c
+#b b
+#a a
+
+print(is_palindrome_for('abcba'))
+
+#a a
+#b b
+#c c

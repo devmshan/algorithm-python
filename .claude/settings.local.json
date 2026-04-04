@@ -1,3 +1,8 @@
 {
-  "outputStyle": "Beginner Friendly"
+  "outputStyle": "Beginner Friendly",
+  "enabledMcpjsonServers": [
+    "context7",
+    "playwright",
+    "sequential-thinking"
+  ]
 }

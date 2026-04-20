@@ -6,7 +6,6 @@ memo = {
     2: 1
 }
 
-
 def fibo_dynamic_programming(n, fibo_memo):
     if n in fibo_memo:
         return fibo_memo[n]
